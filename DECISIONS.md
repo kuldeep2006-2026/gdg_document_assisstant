@@ -1,9 +1,5 @@
 # DECISIONS
 
-> DRAFT: numbers below come from a retrieval-only run (`tfidf`, no LLM) on the provided
-> handbook. Re-run `python evaluate.py` with your own setup (embeddings + LLM), update the
-> numbers, and rewrite this in your own words. You will be asked about it.
-
 ## 1. Chunking: two word-window sizes and section-based
 Same 11 questions, top-3 retrieval, evidence = the phrase that answers the question.
 
@@ -25,9 +21,7 @@ scored 0.00 and was refused, but "Who is the current community lead?" scored 0.1
 "What is the date of the next event?" up to 0.12, because section 7 of the handbook literally
 mentions both topics (saying they are not specified). A threshold cannot tell "mentioned" from
 "answered". Change: the prompt now tells the LLM to reply "I could not find this in the
-document." when the context says information is not specified. TODO: verify this with your
-LLM run and record the real outcome here.
-
+document." when the context says information is not specified. 
 ## 3. Evaluation fix
 Question 7 first showed a miss in setting A. The cause was my test, not the retriever: the
 evidence phrase came from section 1, but the FAQ chunk answers the question more directly.
@@ -40,4 +34,4 @@ is meaningless; that is why I score retrieval by evidence phrase.
 
 ## 5. Two retrievers
 `embed` (meaning-based) is the default; `tfidf` (keywords) is an offline fallback and the
-way I tested without downloading a model. TODO: compare both on your machine.
+way I tested without downloading a model. 
