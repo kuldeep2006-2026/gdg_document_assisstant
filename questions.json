@@ -1,0 +1,13 @@
+[
+  {"q": "What are the opening hours of the Student Support Desk?", "evidence": "10:00 AM to 4:00 PM"},
+  {"q": "Who should I contact about fee payment issues?", "evidence": "accounts office"},
+  {"q": "Do all workshops provide certificates?", "evidence": "does not automatically provide a certificate"},
+  {"q": "What should a project README contain?", "evidence": "how to run the project"},
+  {"q": "What does AI_USAGE.md need to state?", "evidence": "which tools were used"},
+  {"q": "Does registering for an event guarantee entry?", "evidence": "does not guarantee entry"},
+  {"q": "Can the Student Support Desk approve attendance exemptions?", "evidence": "does not approve attendance exemptions"},
+  {"q": "My learning portal is broken and I also want a fee refund. Who do I contact?", "evidence": "IT help desk"},
+  {"q": "What is the date of the next GDG event?", "evidence": null},
+  {"q": "Who is the current community lead?", "evidence": null},
+  {"q": "What is the capital of France?", "evidence": null}
+]
