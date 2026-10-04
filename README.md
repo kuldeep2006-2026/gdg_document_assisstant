@@ -1,5 +1,5 @@
 # AI-Powered Document Assistant (GDG-USAR AI/ML Task 3)
-
+Status: retrieval was tested end to end. The LLM answer step needs an API key (Gemini/OpenAI/Anthropic) set in .env; without one, run with LLM_PROVIDER=none for retrieval-only.
 Ask questions about the GDG-USAR handbook (`data/handbook.pdf`). The assistant finds the
 relevant passages, answers using only those passages, and shows the source page.
 If the document doesn't contain the answer, it says so.
